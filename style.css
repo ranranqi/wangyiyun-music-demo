@@ -3,7 +3,7 @@
 *{box-sizing: border-box;}
 *::before{box-sizing: border-box;}
 *::after{box-sizing: border-box;}
-ul,ol{list-style: none;}
+ul,ol,li{list-style: none;}
 a{text-decoration: none;}
 body{
     font: 14px/1.5 Helvetica,sans-serif;
@@ -44,4 +44,37 @@ body{
     position: absolute;
     left: 0.76rem;
 
+}
+
+.nav{
+    display: flex;
+    border-bottom: 1px solid #E8E8E8;
+}
+
+.nav .list{
+    width: 0.333rem;
+    height: 0.107rem;
+    display: flex;
+    justify-content: center;
+    font-size: 0.04rem;
+}
+.nav .active{
+    color: #D33A31
+}
+.nav .list .text{
+    height: 100%;
+    width: 0.187rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav .list .text{
+    position: relative;
+}
+.nav .active .text::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-bottom: 2px solid #D33A31;
 }
