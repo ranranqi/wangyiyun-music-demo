@@ -1,0 +1,47 @@
+/* reset */
+*{margin: 0; padding: 0;}
+*{box-sizing: border-box;}
+*::before{box-sizing: border-box;}
+*::after{box-sizing: border-box;}
+ul,ol{list-style: none;}
+a{text-decoration: none;}
+body{
+    font: 14px/1.5 Helvetica,sans-serif;
+}
+
+/*layout*/
+
+.header{
+    width: 1rem;
+    height: 0.17rem;
+    border: 1px solid #e91717;
+    background: #D43C33;
+    display: flex;
+    align-items: center;
+}
+.header .bigLogo{
+    width: 0.38rem;
+    height: 0.066rem;
+    color: #FFFFFF;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    margin-left: 0.037rem;
+}
+.header .bigLogo .wangyi{
+    font-size: 0.052rem;
+    margin-left: 0.018rem;
+    font-weight: 400;
+    letter-spacing: 0.0055rem;
+}
+.header .download{
+    line-height: 0.08rem;
+    color: #FFFFFF;
+    font-size: 0.04rem;
+    border: 1px solid #FFFFFF;
+    border-radius: 37.5%/100%;
+    padding: 0 0.027rem;
+    position: absolute;
+    left: 0.76rem;
+
+}
