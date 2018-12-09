@@ -10,7 +10,13 @@ body{
 }
 
 /*layout*/
-
+.out{
+    position: relative;
+}
+.out .one{
+    position: fixed;
+    z-index: 999;
+}
 .header{
     width: 1rem;
     height: 0.17rem;
@@ -46,6 +52,12 @@ body{
 
 }
 
+.two{
+    position: fixed;
+    top: 0.1653rem;
+    z-index: 999;
+    background: #FFFFFF;
+}
 .nav{
     display: flex;
     border-bottom: 1px solid #E8E8E8;
@@ -75,13 +87,20 @@ body{
 .nav .active .text::before{
     content: '';
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     width: 100%;
     border-bottom: 2px solid #D33A31;
 }
+
+
+
+
 .songForm{
     width: 1rem;
     padding-top: 0.04rem;
+    background: #FCFCFD;
+    position: absolute;
+    top: 0.27rem;
 }
 .songForm .htwo{
     font-size: 0.046rem;
@@ -122,4 +141,34 @@ body{
 }
 .songForm .formRowWrap{
     padding-bottom: 0.05rem;
+}
+
+.songForm .songList .aWrap .liWrap{
+    margin-left: 0.024rem;
+    margin-right: 0.024rem;
+    color: #333;
+    height: 0.146rem;
+    border-bottom: 0.003rem solid #F1F1F2;
+    display: flex;
+    justify-content: space-between;
+}
+.songForm .songList .aWrap .liWrap .songname{
+    font-size: 0.045rem;
+}
+.songForm .songList .aWrap .liWrap .singer{
+    font-size: 0.032rem;
+    color: #888;
+}
+.songForm .songList .aWrap .liWrap .singer .sq{
+    width: 0.035rem;
+    height: 0.024rem;
+}
+.songForm .songList .aWrap .liWrap .liright{
+    display: flex;
+    align-items: center;
+    padding: 0 0.0267rem;
+}
+.songForm .songList .aWrap .liWrap .liright .player{
+    width: 0.065rem;
+    height: 0.065rem;
 }
