@@ -13,7 +13,7 @@ body{
 .out{
     position: relative;
 }
-.out .one{
+.out .headerWrapper{
     position: fixed;
     z-index: 999;
 }
@@ -52,7 +52,7 @@ body{
 
 }
 
-.two{
+.out .navWrapper{
     position: fixed;
     top: 0.1653rem;
     z-index: 999;
